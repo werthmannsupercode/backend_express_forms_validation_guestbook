@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuer Eintrag - Fehlgeschlagen</title>
+</head>
+
+<body>
+    <p>Bitte überprüfe deine Eingabe</p>
+    <a href="/newEntry.html">zurück zum Eintrag</a>
+
+    <h2>Deine Eingabefehler</h2>
+    <ul>
+        <% errors.forEach((err)=> { %>
+            <li>Value "<b>
+                    <%- err.value %>
+                </b>" in input <b>
+                    <%- err.param %>
+                </b> is invalid.</li>
+            <% })%>
+    </ul>
+</body>
+
+</html>

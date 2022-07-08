@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>Willkommen bei uns 🌸</h1>
+        <p>schön, dass du da bist! - Hier kannst du dich nach Lust und Laune mit uns unterhalten.</p>
+        <p>Und das Beste: Alles komplett ohne Registrierung!</p>
+        <a href="/newEntry.html">Write a new entry here</a>
+    </header>
+    <main>
+        <h1>Gästebuch</h1>
+        <div>
+            <% entriesArray.forEach((entry)=> {%>
+                <p>
+                    <span class="nurVorname">
+                        <%- entry.vorname %>
+                    </span>
+                    <span class="mailAdress">
+                        <%- entry.email %>
+                    </span>
+                    schreibt:
+                </p>
+                <p>
+                    <%- entry.entry %>
+                </p>
+                <%})%>
+        </div>
+    </main>
+</body>
+
+</html>

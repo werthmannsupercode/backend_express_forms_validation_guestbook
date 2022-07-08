@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuer Eintrag im Gästebuch</title>
+</head>
+
+<body>
+    <h1>Neuer Eintrag ins Gästebuch</h1>
+    <p>Fülle bitte alle Felder aus, um deinen Eintrag erfolgreich an uns zu übermitteln.</p>
+    <form method="post" action="/newEntry">
+        <input type="text" name="vorname" placeholder="Schreibe hier deinen VORNAMEN" id="vorname">
+        <input type="text" name="nachname" placeholder="Schreibe hier deinen NACHNAMEN" id="nachname">
+        <input type="email" name="email" id="email" placeholder="Schreibe hier deine EMAIL">
+        <input type="text" name="entry" id="entry" placeholder="Schreibe hier deinen Eintrag in unser Gästebuch">
+        <input type="submit" value="Eintrag absenden">
+    </form>
+
+</body>
+
+</html>
